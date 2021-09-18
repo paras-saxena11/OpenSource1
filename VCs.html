@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Os.css">
+    <title>Version Control System</title>
+</head>
+<body>
+    <nav>
+        <a href="OS.html">Open Source</a><a href="VCs.html">Version Control</a><a href="Github.html">Github</a>
+    </nav>
+    <h1>Version Control System</h1>
+    <section>
+        <p>
+        In software engineering, version control (also known as revision control, source control, or source code management) is a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information. Version control is a component of software configuration management. <br><br>
+
+        Changes are usually identified by a number or letter code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, the resulting set is "revision 2", and so on. Each revision is associated with a timestamp and the person making the change. Revisions can be compared, restored, and with some types of files, merged.
+
+        The need for a logical way to organize and control revisions has existed for almost as long as writing has existed, but revision control became much more important, and complicated, when the era of computing began. The numbering of book editions and of specification revisions are examples that date back to the print-only era. Today, the most capable (as well as complex) revision control systems are those used in software development, where a team of people may concurrently make changes to the same files.
+        
+        </p>
+    </section>
+    <h2>Graph structure</h2>
+    <section>
+        <p>
+            In terms of graph theory, revisions are generally thought of as a line of development (the trunk) with branches off of this, forming a directed tree, visualized as one or more parallel lines of development (the "mainlines" of the branches) branching off a trunk. In reality the structure is more complicated, forming a directed acyclic graph, but for many purposes "tree with merges" is an adequate approximation.
+            <br><br>
+            Revisions occur in sequence over time, and thus can be arranged in order, either by revision number or timestamp.[note 2] Revisions are based on past revisions, though it is possible to largely or completely replace an earlier revision, such as "delete all existing text, insert new text". In the simplest case, with no branching or undoing, each revision is based on its immediate predecessor alone, and they form a simple line, with a single latest version, the "HEAD" revision or tip. In graph theory terms, drawing each revision as a point and each "derived revision" relationship as an arrow (conventionally pointing from older to newer, in the same direction as time), this is a linear graph. If there is branching, so multiple future revisions are based on a past revision, or undoing, so a revision can depend on a revision older than its immediate predecessor, then the resulting graph is instead a directed tree (each node can have more than one child), and has multiple tips, corresponding to the revisions without children ("latest revision on each branch").[note 3] In principle the resulting tree need not have a preferred tip ("main" latest revision) – just various different revisions – but in practice one tip is generally identified as HEAD. When a new revision is based on HEAD, it is either identified as the new HEAD, or considered a new branch. <br><br> 
+            The list of revisions from the start to HEAD (in graph theory terms, the unique path in the tree, which forms a linear graph as before) is the trunk or mainline.[note 5] Conversely, when a revision can be based on more than one previous revision (when a node can have more than one parent), the resulting process is called a merge, and is one of the most complex aspects of revision control. This most often occurs when changes occur in multiple branches (most often two, but more are possible), which are then merged into a single branch incorporating both changes. If these changes overlap, it may be difficult or impossible to merge, and require manual intervention or rewriting.
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9fN274sTQJvKl9h1rd0M_sDUoaihMWMGjBw&usqp=CAU" style="width: 400px; height: 500px;">
+        </p>
+    </section>
+    <section>
+        <h2>
+            Best Version Control Systems</h2>
+        <p>
+        There are plenty of options available in the market. Hence, we have created a list of 10 best version control software to narrow the options and make things easier for you. <br>   
+
+        1. GitHub <br>
+        GitHub helps software teams to collaborate and maintain the entire history of code changes. You can track changes in code, turn back the clock to undo errors and share your efforts with other team members. <br>
+
+        It is a repository to host Git projects. For those wondering what is Git? It is an open source version control system that features local branching, multiple workflows, and convenient staging areas. Git version control is an easy to learn option and offers faster operation speed. <br>
+
+        2. GitLab
+        GitLab comes with a lot of handy features like an integrated project, a project website, etc. Using the continuous integration (CI) capabilities of GitLab, you can automatically test and del  iver the code.
+        You can access all the aspects of a project, view code, pull requests, and combine the conflict resolution. <br>
+
+        3. Beanstalk <br>
+        Beanstalk is an ideal option for those who need to work from remote places. This software is based on browser and cloud, allowing users to code, commit, review and deploy using a browser.
+
+        It can be integrated with messaging and email platforms for efficient collaborations related to codes and updates. It supports both Git and SVN and comes with built-in analytics features. 
+ 
+    For security, it leverages encryption, two-factor authentication, and password protection functionalities. <br>
+
+4. PerForce
+Perforce delivers the version control capabilities through its HelixCore. The HelixCore comes with a single platform for seamless team collaboration, and support for both centralized and distributed development workflows.
+
+It is a security solution that protects the most valuable assets. HelixCore allows you to track the code changes accurately and facilitates a complete Git ecosystem. <br>
+
+5. Apache Subversion
+Apache Subversion is another open source version control system, which was founded by CollabNet a couple of decades ago. Both open source arena and enterprises consider it a reliable option for valuable data.
+
+Key features of Subversion include inventory management, security management, history tracking, user access controls, cheap local branching, and workflow management. <br>
+ 
+6. AWS CodeCommit
+AWS CodeCommit is a managed version control system that hosts secure and scalable private Git repositories. It seamlessly connects with other products from Amazon Web Services (AWS) and hosts the code in secured AWS environments. Hence, it is a good fit for the existing users of AWS.
+
+AWS integration also provides access to several useful plugins from AWS partners, which helps in software development. <br>
+
+7. Microsoft Team Foundation Server
+Developed by Microsoft, the Team Foundation Server is an enterprise-grade tool to manage source code and other services that need versioning. It can keep track of work items to find defects, requirements, and scenarios in a project.
+
+It comes with several unique features like Team Build, data collection and reporting, Team Project Portal, Team Foundation Shared Services, etc. <br>
+
+8. Mercurial <br>
+Mercurial is known for its efficiency in handling projects of all sizes. It is a free and distributed control management service that provides a simple and intuitive user interface.
+
+Developers and enterprises adore Mercurial for its backup system, search functionality, project tracking and management, data import and export, and data migration tool. It also features workflow management, history tracking, security management, access controls and more. <br>
+ 
+9. CVS Version Control (Concurrent Versions System) <br>
+CVS is one of the oldest version control system and is a well-known tool among both commercial and open source developers. It allows you to check out the code you are planning to work on, and check-in the changes.
+
+It has the capability to handle projects with multiple branches so that teams can merge their code changes and contribute unique features to the project.
+
+Since CVS is here for a long time now, it is the most mature version control software. <br>
+
+10. Bitbucket <br>
+Bitbucket is a part of the Atlassian software suite, so it can be integrated with other Atlassian services including HipChat, Jira, and Bamboo. The main features of Bitbucket are code branches, in-line commenting and discussions, and pull requests.
+
+It can be deployed on a local server, data center of the company, as well as on the cloud. Bitbucket allows you to connect with up to five users for free. This is good because you can try the platform for free before deciding to purchase.
+        </p>
+    </section>
+</body>
+</html>
